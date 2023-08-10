@@ -10,14 +10,14 @@ package com.example.kotlinpractice
 class Data {
 }
 
-data class Ticket(val companyName:String,val name: String, var date:String,val seatNumber:Int)
+data class Ticket(val companyName: String, val name: String, var date: String, val seatNumber: Int)
 //toString(), hashCode(), equals() ,copy()
 
-class TicketNormal(val companyName:String,val name: String, var date:String,val seatNumber:Int)
+class TicketNormal(val companyName: String, val name: String, var date: String, val seatNumber: Int)
 
-fun main(){
-    val TicketA = Ticket("koreanAir","Baekkuenwoo","2020-02-15",14)
-    val TicketB = TicketNormal("koreanAir","Baekkuenwoo","2020-02-15",14)
+fun main() {
+    val TicketA = Ticket("koreanAir", "Baekkuenwoo", "2020-02-15", 14)
+    val TicketB = TicketNormal("koreanAir", "Baekkuenwoo", "2020-02-15", 14)
 
     println(TicketA)
     println(TicketB)
